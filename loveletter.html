@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter 💌</title>
+    <link rel="stylesheet" href="styles/loveletter_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/images/download (1).jpg" alt="Together Image" class="header-image">
+        <h1 class="title">Tap the Cute Letter 💌</h1>
+
+        <div class="letter-wrapper" onclick="openLetter()">
+            <div class="envelope">
+                <img src="assets/images/love-message.png" alt="Cute Envelope" class="icon">
+            </div>
+        </div>
+
+        <div class="letter-content" id="letter">
+            <div class="letter-paper">
+                <p class="love-text">untuk yang selalu ada di hatiku, kamu savin.</p>
+                <p>hari ini, aku ingin menulis sesuatu yang spesial untuk kamu. Bukan hanya sekedar kata, tapi sesuatu yang benar-benar berasal dari dalam hatiku. nanti tepatnya tanggal 4 Februari menandai satu tahun hubungan kita, satu tahun yang kita jalani dengan penuh tawa, air mata, dan semua emosi yang tidak bisa kuungkapkan dengan kata-kata saja.</p>
+                <p>
+                    tentu, aku masih ingat awal kita berkenalan, the way kamu ngedeketin aku. dan dari perkenalan itu lama lama tumbuh menjadi perasaan yang lebih besar. aku juga ingat bagaimana aku bisa mulai menerima perasaan walaupun aku sering denial, bagaimana kamu selalu ada nemenin aku juga, dan terkadang saat aku tidak bisa mengungkapkan dengan jelas apa yang aku rasain, kamu bisa meminta aku untuk menjelaskan secara perlahan.
+                </p>
+                <p>
+                    kita udah ngejalanin satu tahun, satu tahun ya... kinda spesial for me. tapi tentunya untuk mencapai satu tahun itu kita ngelewatin banyak hal dari bahagia hingga ke titik masa-masa sulit yang menguji seberapa kuat kita bisa bertahan. 
+                </p>
+                <p>
+                    aku tahu, kita sering berdebat, pernah saling kecewa, bahkan mungkin pernah merasa lelah. tapi walaupun penyelesaian masalah kita harus bertengkar aku harap kedepannya kita bisa memperbaikin secara baik-baik tanpa bertengkar. itu harapan aku.
+                </p>
+                <p>
+                    aku bersyukur setiap hari karena bisa mencintai dan dicintai oleh kamu. Terima kasih telah menjadi bagian dari hidupku. terima kasih telah menjadi seseorang yang begitu hangat dan penuh kasih. terima kasih karena tidak pernah menyerah pada kita.
+                </p>
+                <p>
+                    selamat anniversary, sayangku. aku sayang kamu dan mencintai kamu, lebih dari yang bisa aku katakan dengan kata-kata.
+                </p>
+                <p class="signature">selalu milikmu, <br><strong>arshan.</strong></p>
+                <button class="close-button" onclick="closeLetter()">Close 💌</button>
+            </div>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">Back to Memories</button>
+
+        <div class="floating-hearts"></div>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.getElementById("letter").style.display = "block";
+            document.getElementById("letter").classList.add("fade-in");
+
+            let heartsContainer = document.querySelector('.floating-hearts');
+            for (let i = 0; i < 10; i++) {
+                let heart = document.createElement("div");
+                heart.className = "heart-float";
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
+                heartsContainer.appendChild(heart);
+
+                setTimeout(() => heart.remove(), 5000);
+            }
+        }
+
+        function closeLetter() {
+            document.getElementById("letter").style.display = "none";
+        }
+
+        function goBack() {
+            window.location.href = 'memories.html';
+        }
+    </script>
+</body>
+</html>

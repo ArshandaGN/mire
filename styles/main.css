@@ -1,0 +1,78 @@
+/* Isi kode untuk main.css (disesuaikan untuk tampilan HP) */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f9e3e3, #df9ab1);;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background: rgb(246, 237, 237);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 350px;
+}
+
+.passcode-input input {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.numpad button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #c9938d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.numpad button:hover {
+    background-color: #dc958f;
+}
+
+* CSS untuk countdown agar responsif di HP */
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+}
+
+.countdownwrap canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    .container {
+        width: 95%;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Countdown</title>
+    <link rel="stylesheet" href="styles/countdown_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/images/cat smile.jpg" alt="Together Image" class="header-image">
+        <h1>Time We've Been Together</h1>
+        <div class="countdown">
+            <div class="time-unit">
+                <div class="circle">
+                    <p class="value" id="months">0</p>
+                </div>
+                <p class="label">Months</p>
+            </div>
+            <div class="time-unit">
+                <div class="circle">
+                    <p class="value" id="days">0</p>
+                </div>
+                <p class="label">Days</p>
+            </div>
+            <div class="time-unit">
+                <div class="circle">
+                    <p class="value" id="hours">0</p>
+                </div>
+                <p class="label">Hours</p>
+            </div>
+            <div class="time-unit">
+                <div class="circle">
+                    <p class="value" id="minutes">0</p>
+                </div>
+                <p class="label">Minutes</p>
+            </div>
+            <div class="time-unit">
+                <div class="circle">
+                    <p class="value" id="seconds">0</p>
+                </div>
+                <p class="label">Seconds</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-group">
+        <button class="navigation-button" onclick="goToPreviousPage()">Previous Page</button>
+        <button class="navigation-button" onclick="goToNextPage()">Next Page</button>
+    </div>
+    
+    <script src="scripts/countdown_script.js"></script>
+</body>
+</html>

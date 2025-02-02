@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories</title>
+    <link rel="stylesheet" href="styles/memories_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Memories</h1>
+        <p class="intro-text">Click an icon to relive our special moments.</p>
+
+        <div class="memories-grid">
+            <!-- Icon: Photo -->
+            <a href="photo.html" class="memory-item" title="View Photos">
+                <div class="icon photo-icon"></div>
+            </a>
+
+            <!-- Icon: Video -->
+            <a href="video.html" class="memory-item" title="Watch Videos">
+                <div class="icon video-icon"></div>
+            </a>
+
+            <!-- Icon: Audio -->
+            <a href="audio.html" class="memory-item" title="Listen to Songs">
+                <div class="icon audio-icon"></div>
+            </a>
+
+            <!-- Icon: Love Letter -->
+            <a href="loveletter.html" class="memory-item" title="Open Love Letters">
+                <div class="icon letter-icon"></div>
+            </a>
+
+            <!-- Icon: Gift -->
+            <a href="gift.html" class="memory-item" title="Open Your Gift">
+                <div class="icon gift-icon"></div>
+            </a>
+        </div>
+
+        <!-- Previous Page Button -->
+        <button class="navigation-button" onclick="goToPreviousPage()">Previous Page</button>
+    </div>
+
+    <script src="scripts/memories_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Playlist</title>
+    <link rel="stylesheet" href="styles/audio_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="audio-container">
+        <h1>Our Love Playlist</h1>
+        <div class="spotify-card">
+            <img src="assets/images/spotify.png" alt="Playlist Cover" class="playlist-cover">
+            <div class="spotify-info">
+                <h2>Special Playlist</h2>
+                <p>Curated with love ❤️</p>
+                <a href="https://open.spotify.com/playlist/5gLoeHWnerfzOTT7PI8mxs?si=1IUkgqqwQeSyfkuYtlxbwg" target="_blank" class="spotify-button">🎵 Open in Spotify</a>
+            </div>
+        </div>
+        <button class="back-button" onclick="goBack()">Back to Memories</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'memories.html';
+        }
+    </script>
+</body>
+</html>

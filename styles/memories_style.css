@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f9e3e3, #df9ab1);
+    color: #4d3a3a;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #513838;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #704949;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Memories Grid Styling */
+.memories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.memory-item {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memory-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.memory-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #4d3a3a;
+}
+
+/* Icon Styling */
+.icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: #df9ab1;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.photo-icon::before {
+    content: '📷'; /* Icon for photo */
+}
+
+.video-icon::before {
+    content: '🎥'; /* Icon for video */
+}
+
+.audio-icon::before {
+    content: '🎵'; /* Icon for audio */
+}
+
+.letter-icon::before {
+    content: '💌'; /* Icon for love letter */
+}
+
+.gift-icon::before {
+    content: '🎁'; /* Icon for gift */
+}
+
+/* Previous Page Button */
+.navigation-button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #df9ab1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigation-button:hover {
+    background-color: #df7799;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
