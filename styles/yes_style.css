@@ -1,13 +1,15 @@
 body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 500vh;
     background: linear-gradient(135deg, #f9e3e3, #df9ab1);;
-    font-family: 'Poppins', sans-serif;
     flex-direction: column;
     text-align: center;
+    overflow: hidden;
 }
 
 .container {
