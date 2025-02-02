@@ -14,31 +14,31 @@ body {
 
 .container {
     background: rgb(246, 237, 237);
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 85%;
     text-align: center;
-    max-width: 600px;
+    max-width: 500px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 1s ease-out;
-    min-height: 450px; /* Ditambahkan agar container cukup tinggi */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Header Image Styling */
 .header-image {
-    width: 180px; /* Menyesuaikan ukuran agar tidak kepotong */
-    max-height: 180px; /* Membatasi tinggi gambar agar tetap proporsional */
-    object-fit: contain; /* Mencegah gambar terpotong */
-    margin-bottom: 20px;
+    width: 150px; /* Ukuran diperkecil agar tidak terlalu besar */
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -52,32 +52,32 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .time-unit {
     text-align: center;
-    flex: 1 1 calc(33% - 30px);
-    max-width: 120px;
+    flex: 1 1 calc(30% - 10px);
+    max-width: 100px;
     transition: transform 0.3s ease;
 }
 
 .time-unit:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .circle {
-    width: 80px;
-    height: 80px;
-    border: 4px solid #e3b1cb;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #e3b1cb;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -86,13 +86,13 @@ body {
 }
 
 .value {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #31292d;
 }
 
 .label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-top: 5px;
     color: #4d3a3a;
 }
@@ -101,21 +101,22 @@ body {
 .button-group {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px; /* Memberikan jarak lebih luas antara countdown dan tombol */
 }
 
 .navigation-button {
     font-family: 'Poppins', sans-serif;
     background-color: #df9ab1;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    max-width: 150px;
+    font-size: 0.9rem;
+    width: 45%; /* Mengatur ukuran tombol agar tidak terlalu besar */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
